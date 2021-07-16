@@ -7,8 +7,8 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.model_selection import GridSearchCV
 import pickle
 
-Xp,ids=prot_feats('PaCRISPR_Training_Positive_Original_488.fasta')
-Xn,ids=prot_feats('PaCRISPR_Training_Negative_902.fasta')
+Xp,ids=prot_feats('./dataset/Training_Positive_Original_488.fasta')
+Xn,ids=prot_feats('./dataset/Training_Negative_902.fasta')
 # print(Xp)
 yp=np.array([1]*Xp.shape[0])
 yn=np.array([-1]*Xn.shape[0])
